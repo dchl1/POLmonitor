@@ -25,4 +25,4 @@ jobs:
         
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Run the scraper
-      run: scraper.py
+      run: python scraper.py
