@@ -5,7 +5,7 @@ name: POLmonitor
 
 on:
   schedule:
-    - cron: '0 17 * * *' # runs at 17:00 UTC everyday
+    - cron: '17 19 * * *' # runs at 17:00 UTC everyday
 
 jobs:
   build:
