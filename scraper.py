@@ -58,7 +58,7 @@ class polParser(scrapy.Spider):
             except KeyError:
                 text = ""
 
-            data = {"Post Number": postNo, "Thread Number": threadId, "Thread URL": threadUrl,
+            data = {"Post Number": postNo, "Thread Number": threadId, "Post URL": threadUrl,
                     "Time": time, "Date": date, "Country Code": countryCode,
                     "Country": country, "Replies": replies, "Image URL": imageUrl, "Name": name,
                     "Title": title, "Content": text}
