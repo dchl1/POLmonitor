@@ -66,7 +66,7 @@ class polParser(scrapy.Spider):
             yield data
 
 
-filename = "{n}.csv".format(n=strftime("%Y-%m-%d", gmtime()))
+filename = "data/{n}.csv".format(n=strftime("%Y-%m-%d", gmtime()))
 process = CrawlerProcess(settings={
     "FEEDS": {
         filename: {"format": "csv",
