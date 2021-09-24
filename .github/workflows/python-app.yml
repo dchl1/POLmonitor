@@ -5,7 +5,7 @@ name: POLmonitor
 
 on:
   schedule:
-    - cron: '* 16 * * *' # runs at 16:00 UTC everyday
+    - cron: '15 16 * * *' # runs at 16:15 UTC everyday
 
 jobs:
   build:
@@ -33,7 +33,7 @@ jobs:
         git add -A
         git commit -m "update data" -a
     - name: push changes
-      uses: ad-m/github-push-action@v0.6.0
+      uses: dchl1/github-push-action@v0.6.0
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         branch: main
